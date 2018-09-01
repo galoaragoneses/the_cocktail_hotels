@@ -1,0 +1,22 @@
+{
+  "name": "the_cocktail_hotels",
+  "version": "1.0.0",
+  "description": "Project with practice purpose",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galoaragoneses/the_cocktail_hotels.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galoaragoneses/the_cocktail_hotels/issues"
+  },
+  "homepage": "https://github.com/galoaragoneses/the_cocktail_hotels#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
