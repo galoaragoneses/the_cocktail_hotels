@@ -36,9 +36,14 @@
 .row:after, .wrapper:after {
   clear: both; }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url(./../fonts/Roboto-Black.ttf) format("truetype"), url(./../fonts/Roboto-BlackItalic.ttf) format("truetype"), url(./../fonts/Roboto-Bold.ttf) format("truetype"), url(./../fonts/Roboto-BoldItalic.ttf) format("truetype"), url(./../fonts/Roboto-Italic.ttf) format("truetype"), url(./../fonts/Roboto-Light.ttf) format("truetype"), url(./../fonts/Roboto-LightItalic.ttf) format("truetype"), url(./../fonts/Roboto-Medium.ttf) format("truetype"), url(./../fonts/Roboto-MediumItalic.ttf) format("truetype"), url(./../fonts/Roboto-Regular.ttf) format("truetype"), url(./../fonts/Roboto-Thin.ttf) format("truetype"), url(./../fonts/Roboto-ThinItalic.ttf) format("truetype"); }
+
 body {
   padding: 40px;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  font-family: 'Roboto'; }
 
 .row {
   width: 100%;
