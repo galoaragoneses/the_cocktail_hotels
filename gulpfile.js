@@ -1,6 +1,12 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass-bulk-import');
 
-gulp.task('test', function() {
-  console.log('Hello Test');
+gulp.task('sass', function(){
+  return gulp.src('./assets/css/src/application.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('./assets/css'))
 });
+
+gulp.task('watch', function(){
+  gulp.watch('./assets/css/src/**/*.scss', ['sass']); 
+})
