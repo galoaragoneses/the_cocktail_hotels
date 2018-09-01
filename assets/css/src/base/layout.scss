@@ -1,0 +1,21 @@
+body {
+  padding: 40px;
+  background-color: #fafafa;
+}
+
+.row {
+  width: 100%;
+  clear: both;
+  @extend %clearfix;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: $medium-desktop;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  clear: both;
+  @extend %clearfix;
+}

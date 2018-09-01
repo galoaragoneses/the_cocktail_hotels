@@ -1,0 +1,24 @@
+//
+// Desktop
+//
+.b-sample {
+
+}
+
+//
+// Tablet
+//
+@include media($tablet) {
+  .b-sample {
+
+  }
+}
+
+//
+// Mobile
+//
+@include media($mobile) {
+  .b-sample {
+
+  }
+}
