@@ -18,6 +18,7 @@
   "homepage": "https://github.com/galoaragoneses/the_cocktail_hotels#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-connect": "^5.6.1",
     "gulp-sass": "^4.0.1",
     "gulp-sass-bulk-import": "^1.0.1"
   }

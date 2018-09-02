@@ -1,5 +1,4 @@
 @import url(lib/normalize.7.0.0.css);
-@import url(lib/fontawesome.min.css);
 .hide-on-desktop,
 .responsive-only,
 .tablet-only,
@@ -40,10 +39,6 @@
 @font-face {
   font-family: 'Roboto';
   src: url(./../fonts/Roboto-Black.ttf) format("truetype"), url(./../fonts/Roboto-BlackItalic.ttf) format("truetype"), url(./../fonts/Roboto-Bold.ttf) format("truetype"), url(./../fonts/Roboto-BoldItalic.ttf) format("truetype"), url(./../fonts/Roboto-Italic.ttf) format("truetype"), url(./../fonts/Roboto-Light.ttf) format("truetype"), url(./../fonts/Roboto-LightItalic.ttf) format("truetype"), url(./../fonts/Roboto-Medium.ttf) format("truetype"), url(./../fonts/Roboto-MediumItalic.ttf) format("truetype"), url(./../fonts/Roboto-Regular.ttf) format("truetype"), url(./../fonts/Roboto-Thin.ttf) format("truetype"), url(./../fonts/Roboto-ThinItalic.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'RobotoSlab';
-  src: url(./../fonts/RobotoSlab-Bold.ttf) format("truetype"), url(./../fonts/RobotoSlab-Light.ttf) format("truetype"), url(./../fonts/RobotoSlab-Regular.ttf) format("truetype"), url(./../fonts/RobotoSlab-Thin.ttf) format("truetype"); }
 
 body {
   padding: 40px;

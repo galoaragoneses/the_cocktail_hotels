@@ -18,22 +18,91 @@
 
   <!--CSS-->
   <link rel="stylesheet" href="assets/css/application.css">
+  <link rel="stylesheet" href="assets/css/application.css">
 </head>
 <body>
 
+<nav class="menu">
+  <ul>
+    <li class="menu-item"><a href="#">Tab 1</a></li>
+    <li class="menu-item"><a href="#">Tab 2</a></li>
+  </ul>
+</nav>
 
-<div class="row">
-  <div class="wrapper">
+<section id="tab1Content">
+	<h1>Hotel Mieres del Camín Apartamentos <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h1>
+	<div class="row">
+	  <div class="wrapper room-types">
+		<div class="room-type-item active" id="tab1RoomType1Container">
+			<h2>Sólo Alojamiento</h2>
+			<hr>
+			<ul>
+				<li>Sin régimen</li>
+				<li>Botella de agua de bienvenida</li>
+			</ul>
+			<label for="tab1RoomTypeRadio1">
+				<input type="radio" name="tab1RoomTypeRadio" id="tab1RoomTypeRadio1" value="1" /> Elegir régimen
+			</label>
+		</div>
+		<div class="room-type-item" id="tab1RoomType2Container">
+			<h2>Alojamiento y Desayuno</h2>
+			<hr>
+			<ul>
+				<li>Desayuno buffet completo</li>
+			</ul>
+			<label for="tab1RoomTypeRadio2">
+				<input type="radio" name="tab1RoomTypeRadio" id="tab1RoomTypeRadio2" value="2" /> Elegir régimen
+			</label>
+		</div>
+		<div class="room-type-item active" id="tab1RoomType3Container">
+			<h2>Media Pensión</h2>
+			<hr>
+			<ul>
+				<li>Desayuno buffet completo</li>
+				<li>Cena buffet</li>
+				<li>No incluye</li>
+			</ul>
+			<label for="tab1RoomTypeRadio3">
+				<input type="radio" name="tab1RoomTypeRadio" id="tab1RoomTypeRadio3" value="3" /> Elegir régimen
+			</label>
+		</div>
+		<div class="room-type-item active" id="tab1RoomType4Container">
+			<h2>Todo Incluido</h2>
+			<hr>
+			<ul>
+				<li>Dispondrás de comida y bebida todo el día y durante toda tu estancia</li>
+				<li>Restaurante buffet</li>
+				<li>Snack Bar</li>
+				<li>Servicio de baers (marcas nacionales)</li>
+			</ul>
+			<label for="tab1RoomTypeRadio4">
+				<input type="radio" name="tab1RoomTypeRadio" id="tab1RoomTypeRadio4" value="4" /> Elegir régimen
+			</label>
+		</div>
+		<div class="room-type-item active" id="tab1RoomType5Container">
+			<h2>Todo Incluido</h2>
+			<hr>
+			<ul>
+				<li>Restaurante buffet con bebidas Premium</li>
+				<li>Restaurante a la carta (una cena por estancia)</li>
+				<li>Snack Bar con bebidas Premium</li>
+				<li>Minibar incluido</li>
+				<li>Acceso a SPA y 45 minutos de masaje por persona</li>
+				<li>Actividades deportivas (acuáticas sin motor)</li>
+				<li>Caja fuerte</li>
+				<li>Parking gratuito</li>
+				<li>Lavandería</li>
+			</ul>
+			<label for="tab1RoomTypeRadio5">
+				<input type="radio" name="tab1RoomTypeRadio" id="tab1RoomTypeRadio5" value="5" /> Elegir régimen
+			</label>
+		</div>
+	  </div>
+	</div
+</section>
 
-    <p>
-      <b>El contenido a maquetar debería ir aquí ;)</b><br>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus necessitatibus sapiente totam! Ipsa quia alias minima, iusto amet qui. Veniam obcaecati, hic quidem quaerat dicta vero, nostrum soluta incidunt odio dolores mollitia consequatur dignissimos consectetur atque laborum inventore magnam earum corporis ipsam suscipit. Recusandae vero, molestiae totam quia laborum numquam.
-    </p>
-
-
-  </div>
-</div>
-
+<section id="tab2Content">
+</section>
 
 <script src="assets/js/application.js"></script>
 </body>
