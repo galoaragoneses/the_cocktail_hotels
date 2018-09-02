@@ -1,5 +1,5 @@
-@import url(lib/normalize.7.0.0.css);
-@import url(lib/fontawesome.min.css);
+@import url(../../assets/css/src/lib/normalize.7.0.0.css);
+@import url(../../assets/css/src/lib/fontawesome.min.css);
 .hide-on-desktop,
 .responsive-only,
 .tablet-only,
