@@ -1,5 +1,4 @@
 @import url(../../assets/css/src/lib/normalize.7.0.0.css);
-@import url(../../assets/css/src/lib/fontawesome.min.css);
 .hide-on-desktop,
 .responsive-only,
 .tablet-only,
@@ -30,23 +29,15 @@
   .hide-on-mobile {
     display: none !important; } }
 
-.row:before, .wrapper:before, .row:after, .wrapper:after {
+.row:before, .wrapper:before, nav:before, .row:after, .wrapper:after, nav:after {
   content: ' ';
   display: table; }
 
-.row:after, .wrapper:after {
+.row:after, .wrapper:after, nav:after {
   clear: both; }
 
-@font-face {
-  font-family: 'Roboto';
-  src: url(./../fonts/Roboto-Black.ttf) format("truetype"), url(./../fonts/Roboto-BlackItalic.ttf) format("truetype"), url(./../fonts/Roboto-Bold.ttf) format("truetype"), url(./../fonts/Roboto-BoldItalic.ttf) format("truetype"), url(./../fonts/Roboto-Italic.ttf) format("truetype"), url(./../fonts/Roboto-Light.ttf) format("truetype"), url(./../fonts/Roboto-LightItalic.ttf) format("truetype"), url(./../fonts/Roboto-Medium.ttf) format("truetype"), url(./../fonts/Roboto-MediumItalic.ttf) format("truetype"), url(./../fonts/Roboto-Regular.ttf) format("truetype"), url(./../fonts/Roboto-Thin.ttf) format("truetype"), url(./../fonts/Roboto-ThinItalic.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'RobotoSlab';
-  src: url(./../fonts/RobotoSlab-Bold.ttf) format("truetype"), url(./../fonts/RobotoSlab-Light.ttf) format("truetype"), url(./../fonts/RobotoSlab-Regular.ttf) format("truetype"), url(./../fonts/RobotoSlab-Thin.ttf) format("truetype"); }
-
 body {
-  padding: 40px;
+  padding: 0 40px 40px 40px;
   background-color: #fafafa;
   font-family: 'Roboto'; }
 
@@ -62,5 +53,39 @@ body {
   margin-right: auto;
   margin-left: auto;
   clear: both; }
+
+nav {
+  width: 100%;
+  max-width: 1264px;
+  margin-right: auto;
+  margin-left: auto;
+  clear: both; }
+
+nav#menu {
+  display: flex;
+  justify-content: flex-end;
+  height: 45px;
+  border: 1px solid #E0E1E6;
+  border-top: none;
+  box-sizing: border-box;
+  background-color: #ffffff; }
+  nav#menu .menu-item {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #72BAF2;
+    text-decoration: none;
+    line-height: 14px;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal; }
+    nav#menu .menu-item.active {
+      color: #003970;
+      border-bottom: 2px solid #003970; }
+    nav#menu .menu-item:hover {
+      color: #263746;
+      text-decoration: underline; }
 
 /*@import 'blocks/_b_sample.scss';*/

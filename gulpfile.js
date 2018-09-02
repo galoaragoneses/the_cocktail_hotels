@@ -28,8 +28,14 @@ gulp.task('css', function () {
     .pipe(connect.reload());
 });
 
+gulp.task('js', function () {
+  gulp.src('./assets/js/application.js')
+    .pipe(connect.reload());
+});
+
 gulp.task('watch', function(){
   gulp.watch('./assets/css/src/**/*.scss', ['sass']); 
+  gulp.watch('./assets/js/**/*.js', ['js']); 
   gulp.watch(['./index.html'], ['html']);
   gulp.watch(['./assets/css/application.css'], ['css']);	
 });

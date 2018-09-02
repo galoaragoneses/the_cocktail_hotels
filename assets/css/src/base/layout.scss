@@ -1,29 +1,5 @@
-@font-face {
-    font-family: 'Roboto';
-    src: url(./../fonts/Roboto-Black.ttf) format("truetype"),
-		url(./../fonts/Roboto-BlackItalic.ttf) format("truetype"),
-		url(./../fonts/Roboto-Bold.ttf) format("truetype"),
-		url(./../fonts/Roboto-BoldItalic.ttf) format("truetype"),
-		url(./../fonts/Roboto-Italic.ttf) format("truetype"),
-		url(./../fonts/Roboto-Light.ttf) format("truetype"),
-		url(./../fonts/Roboto-LightItalic.ttf) format("truetype"),
-		url(./../fonts/Roboto-Medium.ttf) format("truetype"),
-		url(./../fonts/Roboto-MediumItalic.ttf) format("truetype"),
-		url(./../fonts/Roboto-Regular.ttf) format("truetype"),
-		url(./../fonts/Roboto-Thin.ttf) format("truetype"),
-		url(./../fonts/Roboto-ThinItalic.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: 'RobotoSlab';
-    src: url(./../fonts/RobotoSlab-Bold.ttf) format("truetype"),
-		url(./../fonts/RobotoSlab-Light.ttf) format("truetype"),
-		url(./../fonts/RobotoSlab-Regular.ttf) format("truetype"),
-		url(./../fonts/RobotoSlab-Thin.ttf) format("truetype");
-}
-
 body {
-  padding: 40px;
+  padding: 0 40px 40px 40px;
   background-color: #fafafa;
   font-family: 'Roboto';
 }
@@ -39,6 +15,15 @@ body {
   max-width: $medium-desktop;
   padding-left: 32px;
   padding-right: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  clear: both;
+  @extend %clearfix;
+}
+
+nav {
+  width: 100%;
+  max-width: $medium-desktop;
   margin-right: auto;
   margin-left: auto;
   clear: both;
