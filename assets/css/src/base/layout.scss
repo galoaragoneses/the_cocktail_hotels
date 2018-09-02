@@ -1,7 +1,7 @@
 body {
   padding: 0 40px 40px 40px;
-  background-color: #fafafa;
-  font-family: 'Roboto';
+  background-color: $c-background-secondary;
+  font-family: "Roboto";
 }
 
 .row {
@@ -21,11 +21,33 @@ body {
   @extend %clearfix;
 }
 
-nav {
-  width: 100%;
-  max-width: $medium-desktop;
-  margin-right: auto;
-  margin-left: auto;
-  clear: both;
-  @extend %clearfix;
+section.page-section {
+  border: 1px solid $c-border-primary;
+  box-sizing: border-box;
+  
+  h1 {
+	color: $c-primary;
+	font-size: 24px;
+	font-family: "Roboto Slab";
+    font-weight: 100;
+	
+	text-align: center;
+	
+	strong {
+		font-weight: 800;
+	}
+	
+	.star-icon {
+		height: 12px;
+		width: 12px;
+		
+		display: inline-block;
+		
+		background: url('../img/star-orange.svg') no-repeat;
+		
+		margin: 0 2px 0 2px;
+	}
+	
+  }
+  
 }

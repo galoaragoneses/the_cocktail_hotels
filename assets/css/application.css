@@ -29,17 +29,17 @@
   .hide-on-mobile {
     display: none !important; } }
 
-.row:before, .wrapper:before, nav:before, .row:after, .wrapper:after, nav:after {
+.row:before, .wrapper:before, .row:after, .wrapper:after {
   content: ' ';
   display: table; }
 
-.row:after, .wrapper:after, nav:after {
+.row:after, .wrapper:after {
   clear: both; }
 
 body {
   padding: 0 40px 40px 40px;
-  background-color: #fafafa;
-  font-family: 'Roboto'; }
+  background-color: #FAFAFA;
+  font-family: "Roboto"; }
 
 .row {
   width: 100%;
@@ -54,12 +54,23 @@ body {
   margin-left: auto;
   clear: both; }
 
-nav {
-  width: 100%;
-  max-width: 1264px;
-  margin-right: auto;
-  margin-left: auto;
-  clear: both; }
+section.page-section {
+  border: 1px solid #E0E1E6;
+  box-sizing: border-box; }
+  section.page-section h1 {
+    color: #003970;
+    font-size: 24px;
+    font-family: "Roboto Slab";
+    font-weight: 100;
+    text-align: center; }
+    section.page-section h1 strong {
+      font-weight: 800; }
+    section.page-section h1 .star-icon {
+      height: 12px;
+      width: 12px;
+      display: inline-block;
+      background: url("../img/star-orange.svg") no-repeat;
+      margin: 0 2px 0 2px; }
 
 nav#menu {
   display: flex;
@@ -74,9 +85,9 @@ nav#menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
     color: #72BAF2;
     text-decoration: none;
-    line-height: 14px;
     font-family: "Roboto Slab";
     font-size: 16px;
     font-weight: 300;
@@ -85,7 +96,80 @@ nav#menu {
       color: #003970;
       border-bottom: 2px solid #003970; }
     nav#menu .menu-item:hover {
-      color: #263746;
+      color: #105AA3;
       text-decoration: underline; }
+
+#tab1Container .room-types {
+  display: flex; }
+  #tab1Container .room-types .room-type-item {
+    flex: 1 1 auto;
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid #C9E4F9; }
+    #tab1Container .room-types .room-type-item:not(.active) {
+      cursor: pointer; }
+    #tab1Container .room-types .room-type-item h2 {
+      font-family: "Roboto";
+      font-weight: 800;
+      font-size: 16px;
+      color: #105AA3;
+      text-align: center; }
+    #tab1Container .room-types .room-type-item hr {
+      width: 40%;
+      color: #105AA3;
+      border: 0;
+      height: 2px;
+      background-color: #E0E1E6; }
+    #tab1Container .room-types .room-type-item ul {
+      min-height: 400px;
+      padding-left: 26px; }
+      #tab1Container .room-types .room-type-item ul li {
+        margin-top: 6px;
+        width: 90%;
+        color: #E0E1E6;
+        font-size: 15px; }
+        #tab1Container .room-types .room-type-item ul li span {
+          color: #003970; }
+    #tab1Container .room-types .room-type-item label.button {
+      background-color: #FAFAFA;
+      border: 1px solid #C9E4F9;
+      height: 44px;
+      width: 80%;
+      margin: 0 auto 20px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #tab1Container .room-types .room-type-item label.button input[type=radio] {
+        display: none; }
+      #tab1Container .room-types .room-type-item label.button .simulated-radio {
+        border: 1px solid #C9E4F9;
+        background: white;
+        border-radius: 50%;
+        height: 16px;
+        width: 16px;
+        position: relative;
+        right: 5px; }
+        #tab1Container .room-types .room-type-item label.button .simulated-radio .inner-simulated-radio {
+          position: absolute;
+          border-radius: 50%;
+          height: 10px;
+          width: 10px;
+          top: 50%;
+          left: 50%;
+          margin: -5px 0px 0px -5px; }
+    #tab1Container .room-types .room-type-item.active {
+      border-color: #003970; }
+      #tab1Container .room-types .room-type-item.active label.button {
+        border-color: #003970; }
+        #tab1Container .room-types .room-type-item.active label.button .simulated-radio {
+          border: 1px solid #6dc138; }
+          #tab1Container .room-types .room-type-item.active label.button .simulated-radio .inner-simulated-radio {
+            background: #6dc138; }
+    #tab1Container .room-types .room-type-item:hover {
+      border-color: #003970; }
 
 /*@import 'blocks/_b_sample.scss';*/
