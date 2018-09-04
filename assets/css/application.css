@@ -99,6 +99,9 @@ nav#menu {
       color: #105AA3;
       text-decoration: underline; }
 
+.page-section {
+  display: none; }
+
 #tab1Container .room-types {
   display: flex; }
   #tab1Container .room-types .room-type-item {
