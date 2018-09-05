@@ -176,4 +176,12 @@
 //
 // Mobile
 //
-@include media($mobile) {}
+@include media($mobile) {
+  #tab2Container .optional-services {
+    .optional-services-header {
+      sub {
+        display:block;
+      }
+    }
+  }
+}

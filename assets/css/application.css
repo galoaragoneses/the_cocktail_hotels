@@ -340,4 +340,8 @@ nav#menu {
     #tab2Container .optional-services .optional-service .more-information-container .include-list ul li {
       margin: 10px 0px; } }
 
+@media only screen and (max-width: 767px) {
+  #tab2Container .optional-services .optional-services-header sub {
+    display: block; } }
+
 /*@import 'blocks/_b_sample.scss';*/
