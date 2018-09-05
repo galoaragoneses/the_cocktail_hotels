@@ -98,9 +98,50 @@
 //
 // Tablet
 //
-@include media($tablet) {}
+@include media($tablet) {
+  #tab1Container .room-types {
+    flex-direction: column;
+    
+    .room-type-item {
+      flex-direction: row;
+      align-items: center;
+      padding-bottom: 0px;
+      
+      h2 {
+        width: 200px;
+      }
+      
+      hr {
+        display: none;
+      }
+      
+      ul {
+        min-width: calc( 58% - 34px );
+      }
+      
+      label.button {
+        position: inherit;
+        left: 0;
+        -webkit-transform: none;
+        transform: none;
+        width: 170px;
+        margin-right: 14px;
+        margin: 0 14px 0 0;
+      }
+    }
+  }
+}
 
 //
 // Mobile
 //
-@include media($mobile) {}
+@include media($mobile) {
+  #tab1Container .room-types {
+    
+    .room-type-item {
+      flex-wrap: wrap;
+      font-size: 80%;
+      justify-content: center;
+    }
+  }
+}

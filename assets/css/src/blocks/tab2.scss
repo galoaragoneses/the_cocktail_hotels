@@ -136,7 +136,42 @@
 //
 // Tablet
 //
-@include media($tablet) {}
+@include media($tablet) {
+
+  #tab2Container .optional-services {
+    .optional-service {
+      .main-information {
+        flex-direction: column;
+        align-items: center;
+        .optional-service-image img {width: 100%;}
+        .more-information-link {
+          padding-left: 46px;
+          &:before {
+            left: 0px;
+          }
+        }
+      }
+      .more-information-container {
+        .include-list {
+          display: flex;
+          flex-direction: column;
+        }
+        .more-information-note {
+          font-weight: 800;
+          color: $c-primary;
+        }
+        .include-list {
+          ul {
+            margin: 0px;
+            li {
+              margin:10px 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 //
 // Mobile

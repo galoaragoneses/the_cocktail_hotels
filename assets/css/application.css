@@ -182,6 +182,34 @@ nav#menu {
     #tab1Container .room-types .room-type-item:hover {
       border-color: #003970; }
 
+@media only screen and (max-width: 1023px) {
+  #tab1Container .room-types {
+    flex-direction: column; }
+    #tab1Container .room-types .room-type-item {
+      flex-direction: row;
+      align-items: center;
+      padding-bottom: 0px; }
+      #tab1Container .room-types .room-type-item h2 {
+        width: 200px; }
+      #tab1Container .room-types .room-type-item hr {
+        display: none; }
+      #tab1Container .room-types .room-type-item ul {
+        min-width: calc( 58% - 34px); }
+      #tab1Container .room-types .room-type-item label.button {
+        position: inherit;
+        left: 0;
+        -webkit-transform: none;
+        transform: none;
+        width: 170px;
+        margin-right: 14px;
+        margin: 0 14px 0 0; } }
+
+@media only screen and (max-width: 767px) {
+  #tab1Container .room-types .room-type-item {
+    flex-wrap: wrap;
+    font-size: 80%;
+    justify-content: center; } }
+
 #tab2Container .optional-services {
   margin-top: 20px;
   padding-left: 30px;
@@ -290,5 +318,26 @@ nav#menu {
       #tab2Container .optional-services .optional-service .more-information-container .more-information-note {
         font-weight: 800;
         color: #003970; }
+
+@media only screen and (max-width: 1023px) {
+  #tab2Container .optional-services .optional-service .main-information {
+    flex-direction: column;
+    align-items: center; }
+    #tab2Container .optional-services .optional-service .main-information .optional-service-image img {
+      width: 100%; }
+    #tab2Container .optional-services .optional-service .main-information .more-information-link {
+      padding-left: 46px; }
+      #tab2Container .optional-services .optional-service .main-information .more-information-link:before {
+        left: 0px; }
+  #tab2Container .optional-services .optional-service .more-information-container .include-list {
+    display: flex;
+    flex-direction: column; }
+  #tab2Container .optional-services .optional-service .more-information-container .more-information-note {
+    font-weight: 800;
+    color: #003970; }
+  #tab2Container .optional-services .optional-service .more-information-container .include-list ul {
+    margin: 0px; }
+    #tab2Container .optional-services .optional-service .more-information-container .include-list ul li {
+      margin: 10px 0px; } }
 
 /*@import 'blocks/_b_sample.scss';*/
