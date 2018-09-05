@@ -4,56 +4,45 @@
 nav#menu {
   display: flex;
   justify-content: flex-end;
-  
   height: 45px;
-  
   border: 1px solid $c-border-primary;
   border-top: none;
   box-sizing: border-box;
-  
   background-color: #ffffff;
-  
   .menu-item {
     width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-	
-	box-sizing: border-box;
-	
+    box-sizing: border-box;
     color: $c-menu;
     text-decoration: none;
-	font-family: "Roboto Slab";
-	font-size: 16px;
-	font-weight: 300;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+    font-weight: 300;
     font-style: normal;
-	
-	&.active {
-		color: $c-menu-active;
-		border-bottom: 2px solid $c-menu-active;
-	}
-    
-	&:hover {
+    &.active {
+      color: $c-menu-active;
+      border-bottom: 2px solid $c-menu-active;
+    }
+    &:hover {
       color: $c-secondary;
-	  text-decoration: underline;
+      text-decoration: underline;
     }
   }
-  
 }
 
 //Initial Navigation
-.page-section { display: none; }
+.page-section {
+  display: none;
+}
 
 //
 // Tablet
 //
-@include media($tablet) {
-  
-}
+@include media($tablet) {}
 
 //
 // Mobile
 //
-@include media($mobile) {
-  
-}
+@include media($mobile) {}

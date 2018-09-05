@@ -26,27 +26,35 @@ section.page-section {
   box-sizing: border-box;
   
   h1 {
-	color: $c-primary;
-	font-size: 24px;
-	font-family: "Roboto Slab";
+    color: $c-primary;
+    font-size: 24px;
+    font-family: "Roboto Slab";
     font-weight: 100;
+    
+    margin: 36px 0;
 	
-	text-align: center;
+    text-align: center;
 	
-	strong {
-		font-weight: 800;
-	}
+    strong {
+      font-weight: 800;
+    }
 	
-	.star-icon {
-		height: 12px;
-		width: 12px;
-		
-		display: inline-block;
-		
-		background: url('../img/star-orange.svg') no-repeat;
-		
-		margin: 0 2px 0 2px;
-	}
+    .star-icon {
+      height: 12px;
+      width: 12px;
+      
+      display: inline-block;
+      
+      background: url('../img/star-orange.svg') no-repeat;
+      
+      margin: 0 2px 0 2px;
+      
+      &:first-of-type {
+        margin-left: 20px;
+      }
+      
+    }
+    
 	
   }
   
