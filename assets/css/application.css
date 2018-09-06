@@ -315,6 +315,8 @@ nav#menu {
       #tab2Container .optional-services .optional-service .more-information-container .include-list {
         display: flex;
         justify-content: space-between; }
+        #tab2Container .optional-services .optional-service .more-information-container .include-list ul {
+          flex: 1; }
       #tab2Container .optional-services .optional-service .more-information-container .more-information-note {
         font-weight: 800;
         color: #003970; }
@@ -343,6 +345,7 @@ nav#menu {
     font-weight: 800;
     color: #003970; }
   #tab2Container .optional-services .optional-service .more-information-container .include-list ul {
+    flex: none;
     margin: 0px; }
     #tab2Container .optional-services .optional-service .more-information-container .include-list ul li {
       margin: 10px 0px; } }

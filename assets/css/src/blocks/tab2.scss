@@ -121,6 +121,9 @@
       .include-list {
         display: flex;
         justify-content: space-between;
+        ul {
+          flex: 1;
+        }
       }
       .more-information-note {
         font-weight: 800;
@@ -172,6 +175,7 @@
         }
         .include-list {
           ul {
+            flex: none;
             margin: 0px;
             li {
               margin:10px 0px;
