@@ -186,6 +186,7 @@ nav#menu {
   #tab1Container .room-types {
     flex-direction: column; }
     #tab1Container .room-types .room-type-item {
+      flex: none;
       flex-direction: row;
       align-items: center;
       padding-bottom: 0px; }
@@ -201,14 +202,15 @@ nav#menu {
         -webkit-transform: none;
         transform: none;
         width: 170px;
-        margin-right: 14px;
         margin: 0 14px 0 0; } }
 
 @media only screen and (max-width: 767px) {
   #tab1Container .room-types .room-type-item {
     flex-wrap: wrap;
     font-size: 80%;
-    justify-content: center; } }
+    justify-content: center; }
+    #tab1Container .room-types .room-type-item label.button {
+      margin: 0 14px 14px 0; } }
 
 #tab2Container .optional-services {
   margin-top: 20px;
@@ -313,8 +315,6 @@ nav#menu {
       #tab2Container .optional-services .optional-service .more-information-container .include-list {
         display: flex;
         justify-content: space-between; }
-        #tab2Container .optional-services .optional-service .more-information-container .include-list ul {
-          flex: 1; }
       #tab2Container .optional-services .optional-service .more-information-container .more-information-note {
         font-weight: 800;
         color: #003970; }
@@ -322,13 +322,20 @@ nav#menu {
 @media only screen and (max-width: 1023px) {
   #tab2Container .optional-services .optional-service .main-information {
     flex-direction: column;
+    justify-content: space-around;
     align-items: center; }
+    #tab2Container .optional-services .optional-service .main-information .optional-service-image {
+      flex-shrink: 0;
+      max-width: 100%; }
     #tab2Container .optional-services .optional-service .main-information .optional-service-image img {
-      width: 100%; }
+      width: 100%;
+      height: auto; }
+    #tab2Container .optional-services .optional-service .main-information .optional-service-description {
+      max-width: calc(100% - 58px); }
     #tab2Container .optional-services .optional-service .main-information .more-information-link {
       padding-left: 46px; }
       #tab2Container .optional-services .optional-service .main-information .more-information-link:before {
-        left: 0px; }
+        left: 30px !important; }
   #tab2Container .optional-services .optional-service .more-information-container .include-list {
     display: flex;
     flex-direction: column; }

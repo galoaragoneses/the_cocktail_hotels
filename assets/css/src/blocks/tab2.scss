@@ -121,9 +121,6 @@
       .include-list {
         display: flex;
         justify-content: space-between;
-        ul {
-          flex: 1;
-        }
       }
       .more-information-note {
         font-weight: 800;
@@ -142,12 +139,25 @@
     .optional-service {
       .main-information {
         flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        .optional-service-image img {width: 100%;}
+        
+        .optional-service-image {
+          flex-shrink: 0;
+          max-width: 100%;
+        }
+        
+        .optional-service-image img {
+          width: 100%;
+          height: auto;
+        }
+        .optional-service-description {
+          max-width: calc(100% - 58px);
+        }
         .more-information-link {
           padding-left: 46px;
           &:before {
-            left: 0px;
+            left:30px !important;
           }
         }
       }
